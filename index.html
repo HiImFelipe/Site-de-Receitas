@@ -3,28 +3,51 @@
   <head>
     <title>Receitas - Home</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F2E9E4",
+              secondary: "#C9ADA7",
+              neutralPrimary: "#9A8C98",
+              neutralSecondary: "#4A4E69",
+              accent: "#22223B",
+            },
+          },
+        },
+      };
+    </script>
   </head>
 
   <body>
     <div class="flex flex-col items-center">
-      <nav class="flex flex-row container bg-indigo-500">
-        <div class="logo-container basis-1/12">
-          <img href="" />
-        </div>
+      <nav class="flex flex-row bg-primary w-full justify-center">
+        <div class="container">
+          <div class="logo-container basis-1/12">
+            <img href="" />
+          </div>
 
-        <div class="flex flex-row space-x-4 basis-11/12 justify-end text-xl">
-          <a class="nav-item" href="/index.html">Home</a>
+          <div class="flex flex-row space-x-4 basis-11/12 justify-end text-xl">
+            <a class="nav-item" href="/index.html">Home</a>
 
-          <div class="dropdown nav-item cursor-pointer">
-            <span>Receitas</span>
+            <div class="dropdown nav-item cursor-pointer">
+              <span>Receitas</span>
 
-            <div class="dropdown-content">
-              <a href="src/pages/receita-de-bolo.html">Bolo</a>
-              <a href="src/pages/receita-de-coxinha.html">Coxinha</a>
-              <a href="src/pages/receita-de-pao-de-queijo.html">
-                Pão de Queijo
-              </a>
+              <div class="dropdown-content">
+                <a href="src/pages/receita-de-bolo.html">Bolo</a>
+                <a href="src/pages/receita-de-coxinha.html">Coxinha</a>
+                <a href="src/pages/receita-de-pao-de-queijo.html">
+                  Pão de Queijo
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -41,8 +64,10 @@
 
           <div class="absolute inner-content">
             <div class="flex h-full items-center justify-center">
-              <div class="w-fit bg-indigo-500 p-6">
-                <h1 class="text-3xl font-bold">Site de Receitas!</h1>
+              <div class="w-fit bg-neutralPrimary p-6">
+                <h1 class="text-5xl font-bold text-neutralSecondary">
+                  Site de Receitas!
+                </h1>
               </div>
             </div>
           </div>
@@ -50,33 +75,45 @@
       </section>
 
       <section class="container mainarticle">
-        <h1>Receitas Populares</h1>
+        <h1 class="text-3xl font-bold">Receitas Populares</h1>
 
         <p>Aqui você encontra receitas populares contidas em nosso sistema</p>
 
-        <div class="recipe-list">
-          <div class="recipe-block">
+        <div class="flex flex-row flex-wrap space-x-16 my-6 p-6">
+          <div class="recipe-card w-40 h-40">
             <img src="" />
-            <h3>Titulo</h3>
-            <p>descrição</p>
+            <h3>Receita de Bolo</h3>
+            <p class="mt-4 text-ellipsis overflow-hidden">
+              Delicie-se com nosso bolo de chocolate macio e irresistível! Esta
+              receita simples e fácil resulta em um bolo úmido e cheio de sabor,
+              perfeito para qualquer ocasião. Prepare-se para uma explosão de
+              chocolate em cada mordida!
+            </p>
           </div>
 
-          <div class="recipe-block">
+          <div class="recipe-card w-40 h-40">
             <img src="" />
-            <h3>Titulo</h3>
-            <p>descrição</p>
+            <h3>Receita de Pão de Queijo</h3>
+            <p class="mt-4 text-ellipsis overflow-hidden">
+              Experimente a autêntica delícia brasileira com nosso pão de queijo
+              caseiro! Crocante por fora e macio por dentro, este quitute
+              irresistível derrete na boca com seu sabor de queijo
+              deliciosamente acentuado. Fácil de fazer e impossível de resistir,
+              é a escolha perfeita para um lanche rápido ou uma festa especial!
+            </p>
           </div>
 
-          <div class="recipe-block">
+          <div class="recipe-card w-40 h-46">
             <img src="" />
-            <h3>Titulo</h3>
-            <p>descrição</p>
-          </div>
-
-          <div class="recipe-block">
-            <img src="" />
-            <h3>Titulo</h3>
-            <p>descrição</p>
+            <h3>Coxinha</h3>
+            <p class="mt-4 text-ellipsis overflow-hidden">
+              Descubra o sabor irresistível da nossa coxinha de queijo, uma
+              versão deliciosa e cremosa desse clássico salgado brasileiro. Com
+              uma casquinha crocante por fora e um recheio cremoso de queijo
+              derretido por dentro, esta receita vai conquistar seu paladar em
+              cada mordida. Perfeita para compartilhar com amigos e familiares
+              em qualquer ocasião!
+            </p>
           </div>
         </div>
       </section>

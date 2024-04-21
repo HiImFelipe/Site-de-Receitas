@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #22223b;
-  --secondary-color: #4a4e69;
+  --primary-color: #f2e9e4;
+  --secondary-color: #c9ada7;
   --accent-color: #9a8c98;
-  --primary-neutral-color: #c9ada7;
-  --secondary-neutral-color: #f2e9e4;
+  --primary-neutral-color: #4a4e69;
+  --secondary-neutral-color: #22223b;
 }
 
 * {
@@ -15,6 +15,7 @@
 body {
   background-color: var(--secondary-color);
   color: var(--secondary-neutral-color);
+  font-family: "Roboto", sans-serif;
 }
 
 .nav-item {
