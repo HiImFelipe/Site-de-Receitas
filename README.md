@@ -21,4 +21,4 @@ Notas:
 Foi-se dado o uso de Tailwind para facilitação de estilização através de classes atômicas.
 Apesar disso, ainda existe muita estilização CSS feita manualmente no arquivo `stylesheet.css`.
 
-A versão CDN do tailwind foi importada ao invés da intalação padrão **por não depender de instalação ou NodeJS**.
+A versão CDN do Tailwind foi importada no arquivo HTML, ao invés da intalação padrão **por não depender de instalação ou NodeJS**.
