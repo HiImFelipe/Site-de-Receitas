@@ -3,7 +3,8 @@
 Website feito com o propósito de atingir a nota máxima na matéria de Desenvolvimento Web.
 
 ### Requisitos
-
+- [x] Deve ser feito um site com o tema `Receitas de Comida`.
+- [x] Deve ser possível navegar entre pelo menos 3 páginas diferentes.
 - [x] O arquivo html do site deve chamar index.html
 - [ ] A pagina das receitas deve conter pelo menos uma imagem ou video
 - [x] O arquivo de css deve estar separado do html e chamar stylesheet.css
