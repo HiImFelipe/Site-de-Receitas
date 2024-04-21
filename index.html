@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="src/images/icon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -30,9 +31,9 @@
   <body>
     <div class="flex flex-col items-center">
       <nav class="flex flex-row bg-primary w-full justify-center">
-        <div class="container">
+        <div class="container flex flex-row items-center">
           <div class="logo-container basis-1/12">
-            <img href="" />
+            <img src="src/images/icon.png" class="h-10" />
           </div>
 
           <div class="flex flex-row space-x-4 basis-11/12 justify-end text-xl">
@@ -75,15 +76,30 @@
       </section>
 
       <section class="container mainarticle">
-        <h1 class="text-3xl font-bold">Receitas Populares</h1>
+        <h1 class="text-3xl font-bold mb-3">Receitas Populares</h1>
 
-        <p>Aqui você encontra receitas populares contidas em nosso sistema</p>
+        <p>
+          Explore as favoritas da nossa comunidade na seção de Receitas
+          Populares!
+        </p>
 
-        <div class="flex flex-row flex-wrap space-x-16 my-6 p-6">
-          <div class="recipe-card w-40 h-40">
-            <img src="" />
-            <h3>Receita de Bolo</h3>
-            <p class="mt-4 text-ellipsis overflow-hidden">
+        <div
+          class="grid grid-cols-3 justify-items-center mt-6 items-center align-center gap-16"
+        >
+          <div
+            class="grid-1 h-[520px] bg-white p-5 hover:cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            <h3 class="text-center mb-3 text-xl font-bold">Receita de Bolo</h3>
+            <div class="relative h-64 overflow-hidden">
+              <img
+                class="absolute top-1/2 -translate-y-1/2"
+                src="src/images/bolo.jpeg"
+                width="100%"
+                height="auto"
+              />
+            </div>
+
+            <p class="mt-4 text-justify text-ellipsis overflow-hidden">
               Delicie-se com nosso bolo de chocolate macio e irresistível! Esta
               receita simples e fácil resulta em um bolo úmido e cheio de sabor,
               perfeito para qualquer ocasião. Prepare-se para uma explosão de
@@ -91,10 +107,22 @@
             </p>
           </div>
 
-          <div class="recipe-card w-40 h-40">
-            <img src="" />
-            <h3>Receita de Pão de Queijo</h3>
-            <p class="mt-4 text-ellipsis overflow-hidden">
+          <div
+            class="grid-1 h-[520px] bg-white p-5 hover:cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            <h3 class="text-center mb-3 text-xl font-bold">
+              Receita de Pão de Queijo
+            </h3>
+            <div class="relative h-64 overflow-hidden">
+              <img
+                class="absolute top-1/2 -translate-y-1/2"
+                src="src/images/pao-de-queijo.jpg"
+                width="100%"
+                height="auto"
+              />
+            </div>
+
+            <p class="mt-4 text-justify text-ellipsis overflow-hidden">
               Experimente a autêntica delícia brasileira com nosso pão de queijo
               caseiro! Crocante por fora e macio por dentro, este quitute
               irresistível derrete na boca com seu sabor de queijo
@@ -103,10 +131,22 @@
             </p>
           </div>
 
-          <div class="recipe-card w-40 h-46">
-            <img src="" />
-            <h3>Coxinha</h3>
-            <p class="mt-4 text-ellipsis overflow-hidden">
+          <div
+            class="grid-1 h-[520px] bg-white p-5 hover:cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            <h3 class="text-center mb-3 text-xl font-bold">
+              Receita de Coxinha
+            </h3>
+            <div class="relative h-64 overflow-hidden">
+              <img
+                class="absolute top-1/2 -translate-y-1/2"
+                src="src/images/coxinha.jpg"
+                width="100%"
+                height="auto"
+              />
+            </div>
+
+            <p class="mt-4 text-justify text-ellipsis overflow-hidden">
               Descubra o sabor irresistível da nossa coxinha de queijo, uma
               versão deliciosa e cremosa desse clássico salgado brasileiro. Com
               uma casquinha crocante por fora e um recheio cremoso de queijo
