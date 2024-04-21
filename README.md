@@ -10,6 +10,11 @@ Website feito com o propósito de atingir a nota máxima na matéria de Desenvol
 - [x] O arquivo de css deve estar separado do html e chamar stylesheet.css
 - [ ] Na pagina principal do site deve ter pelo menos uma animação feita com css (https://www.w3schools.com/css/css3_animations.asp)
 
+Notas:
+
+- A beleza do website não será avaliada;
+- O conteúdo das receitas não importam e não precisam ser, de fato, existentes
+
 ### Ferramentas
 
 Foi-se dado o uso de Tailwind para facilitação de estilização através de classes atômicas.
