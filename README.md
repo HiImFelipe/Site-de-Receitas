@@ -1,6 +1,6 @@
 # Receitas WebDev
 
-Website feito com o propósito de atingir a nota máxima na matéria de Desenvolvimento Web.
+Website feito com o propósito de atingir a nota máxima na matéria de Desenvolvimento Web para o curso de Ciências da Computação - Faculdade de Americana.
 
 ### Requisitos
 
