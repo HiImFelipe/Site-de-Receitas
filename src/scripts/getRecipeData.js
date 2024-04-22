@@ -18,7 +18,7 @@ const getRecipeJSON = async (recipeName) => {
     (recipe) => recipe.receita.toLowerCase() === recipeName.toLowerCase()
   );
 
-  if (!recipeFound) window.location.replace("google.com");
+  if (!recipeFound) throw new Error("Recipe not found");
 
   return recipeFound;
 };
