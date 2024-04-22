@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Receitas - Home</title>
+    <link rel="stylesheet" href="../../stylesheet.css" />
+    <script src="../scripts/getRecipeData.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/icon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#d8c8aa",
+              secondary: "#d9c7a5",
+              neutralPrimary: "#dbd7af",
+              neutralSecondary: "#4A4E69",
+              accent: "#22223B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="flex flex-col items-center">
+      <nav class="shadow-xl flex flex-row bg-primary w-full justify-center">
+        <div class="container flex flex-row items-center">
+          <div class="logo-container basis-1/12">
+            <img src="../images/icon.png" class="h-10" />
+          </div>
+
+          <div class="flex flex-row space-x-4 basis-11/12 justify-end text-xl">
+            <a class="nav-item" href="../../index.html">Home</a>
+
+            <div class="dropdown nav-item cursor-pointer">
+              <span>Receitas</span>
+
+              <div class="dropdown-content">
+                <a href="../pages/receita.html?recipe=bolo">Bolo</a>
+                <a href="../pages/receita.html?recipe=coxinha">Coxinha</a>
+                <a href="../pages/receita.html?recipe=pao-de-queijo">
+                  Pão de Queijo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container mainarticle">
+        <h1 class="text-3xl font-bold mb-3">Receitas Populares</h1>
+
+        <div class="h-96 overflow-hidden float-right">
+          <img
+            class="rounded-full h-[300px] w-[300px] mr-0 sm:max-lg:mr-4 lg:mr-24"
+            src="../images/home-banner.jpg"
+          />
+        </div>
+
+        <p id="instructions" class="text-lg"></p>
+      </section>
+    </div>
+  </body>
+</html>
