@@ -1,0 +1,78 @@
+[
+  {
+    "receita": "coxinha de queijo",
+    "ingredientes": {
+      "agua": "1 xícara",
+      "manteiga": "1/4 xícara",
+      "sal": "1/2 colher de chá",
+      "farinha de trigo": "1 xícara",
+      "ovos": "2 batidos",
+      "queijo": "200g (minas, mussarela ou outro queijo de sua preferência)",
+      "farinha de rosca": "quanto baste",
+      "opcional": "ervas frescas picadas (salsa, cebolinha)"
+    },
+    "instrucoes": [
+      "Em uma panela, coloque a água, a manteiga e o sal e leve ao fogo médio até ferver.",
+      "Assim que ferver, adicione a farinha de trigo de uma vez e mexa rapidamente até formar uma massa homogênea e desgrudar do fundo da panela. Isso deve levar cerca de 2-3 minutos. Retire do fogo.",
+      "Transfira a massa para uma tigela e deixe esfriar um pouco.",
+      "Quando a massa estiver morna, adicione os ovos batidos, um de cada vez, mexendo bem após cada adição até a massa ficar homogênea.",
+      "Pegue pequenas porções da massa, abra na palma da mão, coloque um pouco do queijo no centro e modele em formato de coxinha. Repita o processo até terminar a massa e o queijo.",
+      "Passe cada coxinha pelo ovo batido e depois pela farinha de rosca, garantindo que estejam bem empanadas.",
+      "Frite as coxinhas em óleo quente até dourarem por completo.",
+      "Retire as coxinhas fritas e deixe escorrer em papel toalha para retirar o excesso de óleo.",
+      "Sirva as coxinhas ainda quentes e aproveite!"
+    ]
+  },
+  {
+    "receita": "Pão de Queijo",
+    "ingredientes": {
+      "polvilho azedo": "500g",
+      "queijo minas curado": "200g (ralado)",
+      "óleo": "1/2 xícara",
+      "leite": "1/2 xícara",
+      "ovos": "2",
+      "sal": "1 colher de chá"
+    },
+    "instrucoes": [
+      "Preaqueça o forno a 180°C. Unte uma assadeira ou forre com papel manteiga.",
+      "Em uma panela, aqueça o óleo e o leite até ferver. Retire do fogo e reserve.",
+      "Em uma tigela grande, coloque o polvilho azedo e o sal.",
+      "Despeje a mistura de óleo e leite quente sobre o polvilho e misture bem até formar uma massa homogênea.",
+      "Deixe a massa esfriar um pouco.",
+      "Adicione os ovos um de cada vez, misturando bem após cada adição.",
+      "Acrescente o queijo ralado à massa e misture até que esteja bem incorporado.",
+      "Com as mãos untadas com óleo, modele pequenas porções de massa em formato de bolinhas e disponha na assadeira preparada, deixando um espaço entre elas.",
+      "Leve ao forno preaquecido e asse por aproximadamente 25-30 minutos, ou até que os pães de queijo estejam dourados e firmes ao toque.",
+      "Retire do forno e sirva os pães de queijo quentes.",
+      "Aproveite!"
+    ]
+  },
+  {
+    "receita": "Bolo de Chocolate",
+    "ingredientes": {
+      "farinha de trigo": "2 xícaras",
+      "açúcar": "2 xícaras",
+      "cacau em pó": "3/4 xícara",
+      "fermento em pó": "2 colheres de chá",
+      "bicarbonato de sódio": "1 colher de chá",
+      "sal": "1/2 colher de chá",
+      "ovos": "2 grandes",
+      "leite": "1 xícara",
+      "óleo": "1/2 xícara",
+      "essência de baunilha": "2 colheres de chá",
+      "água fervente": "1 xícara"
+    },
+    "instrucoes": [
+      "Pré-aqueça o forno a 180°C. Unte e enfarinhe uma forma de bolo.",
+      "Em uma tigela grande, peneire a farinha de trigo, o açúcar, o cacau em pó, o fermento em pó, o bicarbonato de sódio e o sal. Misture bem.",
+      "Em outra tigela, bata os ovos, o leite, o óleo e a essência de baunilha até ficar homogêneo.",
+      "Adicione os ingredientes líquidos aos secos e misture até obter uma massa homogênea.",
+      "Por fim, adicione a água fervente à massa e misture até ficar bem incorporado. A massa ficará líquida, é normal.",
+      "Despeje a massa na forma preparada e leve ao forno pré-aquecido.",
+      "Asse por aproximadamente 30-35 minutos, ou até que um palito inserido no centro do bolo saia limpo.",
+      "Retire do forno e deixe esfriar na forma por alguns minutos antes de transferir para uma grade para esfriar completamente.",
+      "Sirva o bolo de chocolate sozinho ou com cobertura de sua preferência.",
+      "Aproveite!"
+    ]
+  }
+]
