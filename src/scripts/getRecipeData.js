@@ -37,18 +37,26 @@ const bootstrap = async () => {
 
   const ingredientEntries = Object.entries(recipe.ingredientes);
 
+  const ingredientsTitle = document.createElement("h2");
+  const breakLine = document.createElement("br");
+  instructionsNode.appendChild(ingredientsTitle);
+  instructionsNode.appendChild(breakLine);
+
+  ingredientsTitle.textContent = "Ingredientes";
+
   for (const [key, value] of ingredientEntries) {
-    instructionsNode.textContent += `${key}: ${value}`;
+    const newParagraph = document.createElement("p");
+    instructionsNode.appendChild(newParagraph);
+
+    newParagraph.textContent += `${key}: ${value}`;
 
     currentIndex = ingredientEntries.findIndex(
       (entry) => entry[0] === key && entry[1] === value
     );
 
-    if (currentIndex === ingredientEntries.length - 1) {
-      return;
-    }
+    if (currentIndex === ingredientEntries.length - 1) return;
 
-    instructionsNode.textContent += ", ";
+    newParagraph.textContent += ", ";
   }
 };
 
