@@ -23,6 +23,23 @@ const getRecipeJSON = async (recipeName) => {
   return recipeFound;
 };
 
+/**
+ * @param {string} title
+ *
+ * @returns {void}
+ */
+
+const addTitle = (title) => {
+  const instructionsNode = document.getElementById("instructions");
+
+  const ingredientsTitle = document.createElement("h2");
+  const breakLine = document.createElement("br");
+  instructionsNode.appendChild(ingredientsTitle);
+  instructionsNode.appendChild(breakLine);
+
+  ingredientsTitle.textContent = title;
+};
+
 const bootstrap = async () => {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -36,13 +53,9 @@ const bootstrap = async () => {
     throw new Error("Instructions node was not found in this page.");
 
   const ingredientEntries = Object.entries(recipe.ingredientes);
+  const instructionEntries = recipe.instrucoes;
 
-  const ingredientsTitle = document.createElement("h2");
-  const breakLine = document.createElement("br");
-  instructionsNode.appendChild(ingredientsTitle);
-  instructionsNode.appendChild(breakLine);
-
-  ingredientsTitle.textContent = "Ingredientes";
+  addTitle("Ingredientes");
 
   for (const [key, value] of ingredientEntries) {
     const newParagraph = document.createElement("p");
@@ -50,13 +63,29 @@ const bootstrap = async () => {
 
     newParagraph.textContent += `${key}: ${value}`;
 
-    currentIndex = ingredientEntries.findIndex(
+    const currentIndex = ingredientEntries.findIndex(
       (entry) => entry[0] === key && entry[1] === value
     );
 
-    if (currentIndex === ingredientEntries.length - 1) return;
+    if (currentIndex === ingredientEntries.length - 1) break;
 
     newParagraph.textContent += ", ";
+  }
+
+  const breakLine = document.createElement("br");
+  instructionsNode.appendChild(breakLine);
+
+  addTitle("Instruções");
+
+  console.log(instructionEntries);
+
+  for (const instruction of instructionEntries) {
+    console.log(instruction);
+
+    const newParagraph = document.createElement("p");
+    instructionsNode.appendChild(newParagraph);
+
+    newParagraph.textContent += instruction;
   }
 };
 
