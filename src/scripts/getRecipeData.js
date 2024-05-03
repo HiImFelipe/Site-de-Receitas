@@ -1,3 +1,9 @@
+const imagePathDictionary = {
+  "coxinha de queijo": "../images/coxinha.jpg",
+  "Pão de Queijo": "../images/pao-de-queijo.jpg",
+  "Bolo de Chocolate": "../images/bolo.jpeg",
+};
+
 /**
  * @param {string} recipeName
  *
@@ -87,6 +93,12 @@ const bootstrap = async () => {
 
     newParagraph.textContent += instruction;
   }
+
+  const recipeImage = document.getElementById("recipe-image");
+
+  if (!recipeImage) throw new Error("Recipe image not found on this page");
+
+  recipeImage.src = imagePathDictionary[recipe.receita];
 };
 
 bootstrap();
