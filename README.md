@@ -9,7 +9,7 @@ Website feito com o propósito de atingir a nota máxima na matéria de Desenvol
 - [x] O arquivo html do site deve chamar index.html
 - [ ] A pagina das receitas deve conter pelo menos uma imagem ou video
 - [x] O arquivo de css deve estar separado do html e chamar stylesheet.css
-- [ ] Na pagina principal do site deve ter pelo menos uma animação feita com css (https://www.w3schools.com/css/css3_animations.asp)
+- [x] Na pagina principal do site deve ter pelo menos uma animação feita com css (https://www.w3schools.com/css/css3_animations.asp)
 
 Notas:
 
