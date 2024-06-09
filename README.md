@@ -22,3 +22,7 @@ Foi-se dado o uso de Tailwind para facilitação de estilização através de cl
 Apesar disso, ainda existe muita estilização CSS feita manualmente no arquivo `stylesheet.css`.
 
 A versão CDN do Tailwind foi importada no arquivo HTML, ao invés da intalação padrão **por não depender de instalação ou NodeJS**.
+
+---
+
+Este projeto está concluído e recebeu a nota máxima em suas competências.
